@@ -1,0 +1,86 @@
+html, body{
+    margin: 0;
+    padding: 0;
+	background-color:blue;
+}
+nav {
+	width:100%;
+	height:6.5vh;
+	background-color:yellow;
+	position: fixed;
+	padding:0;
+}
+footer {
+	width:100%;
+	height:18.5vh;
+	background-color:yellow;
+	padding:0;
+	margin-top: 24vh;
+}
+#hero {
+	width:100%;
+	height:100vh;
+	background-color:pink;
+}
+#motto {
+	width:100%;
+	height:43.5vh;
+	background-color:pink;
+	margin-top: 12vh;
+}
+.paratext {
+	width:100%;
+	height:43.5vh;
+	background-color:pink;
+	margin-top: 12vh;
+}
+#igrid {
+	width:100%;
+	height:70vh;
+	background-color:pink;
+	margin-top: 11vh;
+}
+.thead {
+	width:100%;
+	height:46vh;
+	background-color:pink;
+}
+.shead {
+	width:100%;
+	height:30vh;
+	background-color:pink;
+}
+.htitles {
+	width:100%;
+	height:30vh;
+	background-color:pink;
+	margin-top: 9vh;
+}
+.grid {
+	width:100%;
+	height:178vh;
+	background-color:pink;
+	margin-top: 16vh;
+}
+.sgrid {
+	width:100%;
+	height:50vh;
+	background-color:pink;
+	margin-top: 16vh;
+}
+#contactt {
+	width:100%;
+	height:42vh;
+	background-color:pink;
+}
+#contactb {
+	width:100%;
+	height:37vh;
+	background-color:pink;
+}
+#footercontact {
+	width:100%;
+	height:18.5vh;
+	background-color:yellow;
+	padding:0;
+}

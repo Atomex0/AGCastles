@@ -8,22 +8,56 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>CONTACT</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<nav>
-		
+			<a href="index.html"><img src="images/logos.png" alt="Small AG Castles logo" id="nlogo"></a>
+			<a href="index.html"><img id="iconsh" src="images/housei-final.png" alt="house icon"  onmouseover="HOMEYELLOW()" onmouseout="HOME()"></a>
+			<a href="index.html" onmouseover="HOMEYELLOW()" onmouseout="HOME()" id="icontexth">HOME </a>
+			<a href="equipment.html"><img id="iconsi" src="images/infoi-final.png" alt="info icon"  onmouseover="EQUIPMENTYELLOW()" onmouseout="EQUIPMENT()"></a>
+			<a href="equipment.html" onmouseover="EQUIPMENTYELLOW()" onmouseout="EQUIPMENT()" id="icontexte">EQUIPMENT </a>
+			<a href="contact.html"><img id="iconsp" src="images/phonei-final-red.png" alt="phone icon"></a>
+			<a href="contact.html" class="icontexton">CONTACT</a>
+			<script>
+			function HOMEYELLOW() {
+				document.getElementById("iconsh").src = "images/housei-final-yellow.png";
+				document.getElementById("icontexth").style.color = "#fbde01";
+			}
+			function HOME() {
+				document.getElementById("iconsh").src = "images/housei-final.png";
+				document.getElementById("icontexth").style.color = "#4a91df";
+			}
+			function EQUIPMENTYELLOW() {
+				document.getElementById("iconsi").src = "images/infoi-final-yellow.png";
+				document.getElementById("icontexte").style.color = "#fbde01";
+			}
+			function EQUIPMENT() {
+				document.getElementById("iconsi").src = "images/infoi-final.png";
+				document.getElementById("icontexte").style.color = "#4a91df";
+			}
+			</script>
 		</nav>
 		<div class="thead">
-			<img src="images/logob2.png" alt="AG Castles logo" id="logo">
+			<img src="images/logoa.png" alt="AG Castles logo" id="logo">
 			<img src="images/cat.jpg" alt="cat" id="heroi2">
 		</div>
-		<div Id="contactt">
-		
+		<div id="contactt">
+			<p class="ctext">If you are interested in our services we are found at <b>14 Hua street, Bell Block, New Plymouth</b> where our team of professionals are always happy to help!</p>
+			<br>
+			<p class="ctext">Contact us on our <b>Email: agkidspartyhire@gmail.com</b> or call us at <b>021 125 4317</b> to start your amazing experience with us!</p>
 		</div>
-		<div Id="contactb">
-		
+		<div id="contactb">
+			<a href="equipment.html"><img src="images/contacti1.jpg" alt="cat" id="contacti1"></a>
+			<div id="contactalign">
+				<p class="ctextb">For more examples of our services also check out our Facebook page!</p>
+				<a href="https://www.facebook.com/ag.castle"><img src="images/facebook.png" alt="facebook logo" id="contactfb"></a>
+			</div>
+			<a href="equipment.html"><img src="images/contacti2.jpg" alt="cat" id="contacti2"></a>
 		</div>
-		<div Id="footercontact">
+		<div id="footercontact">
 		
 		</div>
 	</body>

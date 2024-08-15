@@ -8,32 +8,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HOME</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<nav>
-		
+			<a href="index.html"><img src="images/logos.png" alt="Small AG Castles logo" id="nlogo"></a>
+			<a href="index.html"><img id="iconsh" src="images/housei-final-red.png" alt="house icon"></a>
+			<a href="index.html" class="icontexton">HOME </a>
+			<a href="equipment.html"><img id="iconsi" src="images/infoi-final.png" alt="info icon"  onmouseover="EQUIPMENTYELLOW()" onmouseout="EQUIPMENT()"></a>
+			<a href="equipment.html" onmouseover="EQUIPMENTYELLOW()" onmouseout="EQUIPMENT()" id="icontexte">EQUIPMENT </a>
+			<a href="contact.html"><img id="iconsp" src="images/phonei-final.png" alt="phone icon"  onmouseover="CONTACTYELLOW()" onmouseout="CONTACT()"></a>
+			<a href="contact.html" onmouseover="CONTACTYELLOW()" onmouseout="CONTACT()" id="icontextc">CONTACT</a>
+			<script>
+			function EQUIPMENTYELLOW() {
+				document.getElementById("iconsi").src = "images/infoi-final-yellow.png";
+				document.getElementById("icontexte").style.color = "#fbde01";
+			}
+			function EQUIPMENT() {
+				document.getElementById("iconsi").src = "images/infoi-final.png";
+				document.getElementById("icontexte").style.color = "#4a91df";
+			}
+			function CONTACTYELLOW() {
+				document.getElementById("iconsp").src = "images/phonei-final-yellow.png";
+				document.getElementById("icontextc").style.color = "#fbde01";
+			}
+			function CONTACT() {
+				document.getElementById("iconsp").src = "images/phonei-final.png";
+				document.getElementById("icontextc").style.color = "#4a91df";
+			}
+			</script>
 		</nav>
 		<div id="hero">
-			<img src="images/hero.png" alt="AG Castles logo on top of examples of party equipment" id="heroi">
+			<img src="images/herorefined.svg" alt="AG Castles logo on top of examples of party equipment" id="heroi">
 			<img src="images/cat.jpg" alt="cat" id="heroi2">
 		</div>
 		<div id="motto">
-		
+			<img id="mottoc" src="images/motto.png" alt="Make some lasting memories with AG Castles">
 		</div>
 		<div class="paratext">
-		
+			<p class="text">We at AG Castles as a family business understand the importance of creating memories for your little ones. With equipment perfect for occasions like birthdays, fairs or even just gatherings we work hard to cater towards what will make your event special!</p>
 		</div>
 		<div id="igrid">
-		
+			<a href="equipment.html"><img src="images/gridis/AGE2.jpg" alt="cat" class="igsr"></a> <!-- fix alt -->
+			<a href="equipment.html"><img src="images/gridis/AGE3.jpg" alt="cat" class="igsy"></a>
+			<a href="equipment.html"><img src="images/gridis/AGE4.jpg" alt="cat" class="igsb"></a>
+			<br>
+			<a href="equipment.html"><img src="images/gridis/AGE5.jpg" alt="cat" class="igsr"></a>
+			<a href="equipment.html"><img src="images/gridis/AGE6.jpg" alt="cat" class="igsy"></a>
+			<a href="equipment.html"><img src="images/gridis/AGE7.jpg" alt="cat" class="igsb"></a>
 		</div>
 		<div class="paratext">
-		
+			<p class="text" style="padding-top:100px;">What sets us apart is our dedication to safety, bumps and scratches can quickly ruin the mood. So we have the utmost commitment to the well-being of your children so we ensure that our inflatables are meticulousy maintained, regularly inspected and checked to make sure they meet the highest safety standards in the industry!</p>
 		</div>
 		<div class="paratext">
-		
+			<p class="text">Not just that as the professionals on our team are also very passionate about creating the best experiences. From the initial inquiry to the actual event our team will work hard to help match the event to your unique requirements, and select the perfect inflatables and equipment for you!</p>
 		</div>
 		<footer>
-		
+			<a href="https://www.facebook.com/ag.castle" id="footerlinks"><img src="images/facebook.png" alt="facebook logo" id="facebook"></a>
+			<div class="ftalign">
+				<p class="footertext">Phone number: 021 125 4317</p>
+				<p class="footertext">Address: 14 Hua street, Bell Block, New Plymouth</p>
+				<p class="footertext">Email: agkidspartyhire@gmail.com</p>
+			</div>
+			<img src="images/logob.jpg" alt="AG Castles logo" id="footerlogo">
 		</footer>
 	</body>
 </html>

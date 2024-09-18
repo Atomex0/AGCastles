@@ -15,34 +15,28 @@
 	<body>
 		<nav>
 			<a href="index.html"><img src="images/logos.png" alt="Small AG Castles logo" id="nlogo"></a>
+			<button onclick="DROPBORDER();BURGER()" id="burger"><img id="burger" src="images/burger.svg" alt="house icon"></a></button>
 			<a href="index.html"><img id="iconsh" src="images/housei-final-red.png" alt="house icon"></a>
 			<a href="index.html" class="icontexton">HOME </a>
 			<a href="equipment.html"><img id="iconsi" src="images/infoi-final.png" alt="info icon"  onmouseover="EQUIPMENTYELLOW()" onmouseout="EQUIPMENT()"></a>
 			<a href="equipment.html" onmouseover="EQUIPMENTYELLOW()" onmouseout="EQUIPMENT()" id="icontexte">EQUIPMENT </a>
 			<a href="contact.html"><img id="iconsp" src="images/phonei-final.png" alt="phone icon"  onmouseover="CONTACTYELLOW()" onmouseout="CONTACT()"></a>
 			<a href="contact.html" onmouseover="CONTACTYELLOW()" onmouseout="CONTACT()" id="icontextc">CONTACT</a>
-			<script>
-			function EQUIPMENTYELLOW() {
-				document.getElementById("iconsi").src = "images/infoi-final-yellow.png";
-				document.getElementById("icontexte").style.color = "#fbde01";
-			}
-			function EQUIPMENT() {
-				document.getElementById("iconsi").src = "images/infoi-final.png";
-				document.getElementById("icontexte").style.color = "#4a91df";
-			}
-			function CONTACTYELLOW() {
-				document.getElementById("iconsp").src = "images/phonei-final-yellow.png";
-				document.getElementById("icontextc").style.color = "#fbde01";
-			}
-			function CONTACT() {
-				document.getElementById("iconsp").src = "images/phonei-final.png";
-				document.getElementById("icontextc").style.color = "#4a91df";
-			}
-			</script>
 		</nav>
+		<div id="dropdown">
+			<div id="blinks">
+				<button onclick="CLOSE();CLOSEBORDER()" id="close">X</button>
+				<br>
+				<br>
+				<a href="index.html" id="bhome">Home</a>
+				<a href="equipment.html" id="bequipment">Equipment</a>
+				<a href="contact.html" id="bcontact">Contact</a>
+			</div>
+		</div>
 		<div id="hero">
 			<img src="images/herorefined.svg" alt="AG Castles logo on top of examples of party equipment" id="heroi">
-			<img src="images/cat.jpg" alt="cat" id="heroi2">
+			<!-- <img width="500" height="500" src="images/arrow.gif" id="arrow" alt="pizza"> --><img src="images/arrow.svg" alt="AG Castles logo on top of examples of party equipment" id="arrow">
+			<img src="images/mobilehero.svg" alt="cat" id="mobilehero">
 		</div>
 		<div id="motto">
 			<img id="mottoc" src="images/motto.png" alt="Make some lasting memories with AG Castles">
@@ -51,14 +45,15 @@
 			<p class="text">We at AG Castles as a family business understand the importance of creating memories for your little ones. With equipment perfect for occasions like birthdays, fairs or even just gatherings we work hard to cater towards what will make your event special!</p>
 		</div>
 		<div id="igrid">
-			<a href="equipment.html"><img src="images/gridis/AGE2.jpg" alt="cat" class="igsr"></a> <!-- fix alt -->
-			<a href="equipment.html"><img src="images/gridis/AGE3.jpg" alt="cat" class="igsy"></a>
+			<button onclick="AJAX()"><img src="images/gridis/AGE2.jpg" alt="cat" class="igsr"></button><!-- fix alt -->
+			<a href="equipment.html" id="AG3"><img src="images/gridis/AGE3.jpg" alt="cat" class="igsy"></a>
 			<a href="equipment.html"><img src="images/gridis/AGE4.jpg" alt="cat" class="igsb"></a>
-			<br>
-			<a href="equipment.html"><img src="images/gridis/AGE5.jpg" alt="cat" class="igsr"></a>
-			<a href="equipment.html"><img src="images/gridis/AGE6.jpg" alt="cat" class="igsy"></a>
-			<a href="equipment.html"><img src="images/gridis/AGE7.jpg" alt="cat" class="igsb"></a>
+			<div id="br"></div>
+			<a href="equipment.html"><img src="images/gridis/AGE5.jpg" alt="cat" class="igsr2"></a>
+			<a href="equipment.html"><img src="images/gridis/AGE6.jpg" alt="cat" class="igsy2"></a>
+			<a href="equipment.html"><img src="images/gridis/AGE7.jpg" alt="cat" class="igsb2"></a>
 		</div>
+		<a href="equipment.html" class="gridlink"><p class="gridlink">Check out our full collection of equipment here!</p></a>
 		<div class="paratext">
 			<p class="text" style="padding-top:100px;">What sets us apart is our dedication to safety, bumps and scratches can quickly ruin the mood. So we have the utmost commitment to the well-being of your children so we ensure that our inflatables are meticulousy maintained, regularly inspected and checked to make sure they meet the highest safety standards in the industry!</p>
 		</div>
@@ -68,11 +63,51 @@
 		<footer>
 			<a href="https://www.facebook.com/ag.castle" id="footerlinks"><img src="images/facebook.png" alt="facebook logo" id="facebook"></a>
 			<div class="ftalign">
-				<p class="footertext">Phone number: 021 125 4317</p>
-				<p class="footertext">Address: 14 Hua street, Bell Block, New Plymouth</p>
-				<p class="footertext">Email: agkidspartyhire@gmail.com</p>
+				<p class="footertext"><b>Phone number</b>: 021 125 4317</p>
+				<p class="footertext"><b>Address</b>: 14 Hua street, Bell Block, New Plymouth</p>
+				<p class="footertext"><b>Email</b>: agkidspartyhire@gmail.com</p>
 			</div>
 			<img src="images/logob.jpg" alt="AG Castles logo" id="footerlogo">
 		</footer>
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		function EQUIPMENTYELLOW() {
+			document.getElementById("iconsi").src = "images/infoi-final-yellow.png";
+			document.getElementById("icontexte").style.color = "#fbde01";
+		}
+		function EQUIPMENT() {
+			document.getElementById("iconsi").src = "images/infoi-final.png";
+			document.getElementById("icontexte").style.color = "#4a91df";
+		}
+		function CONTACTYELLOW() {
+			document.getElementById("iconsp").src = "images/phonei-final-yellow.png";
+			document.getElementById("icontextc").style.color = "#fbde01";
+		}
+		function CONTACT() {
+			document.getElementById("iconsp").src = "images/phonei-final.png";
+			document.getElementById("icontextc").style.color = "#4a91df";
+		}
+		function DROPBORDER() {
+			document.getElementById("dropdown").setAttribute("style","border-bottom: 8px solid #4a91df");
+		}
+		function BURGER() {
+			document.getElementById("dropdown").style.height = "259px";
+		}
+		function CLOSEBORDER() {
+			document.getElementById("dropdown").setAttribute("style","0");
+		}
+		function CLOSE() {
+			document.getElementById("dropdown").style.height = "0";
+		}
+		function PAGE(){
+			<!-- document.getElementById("bequipment").click(); -->
+			document.getElementById("icontextc").style.color = "#fbde01";
+		}
+		function ANCHOR(){
+			<!-- document.getElementById("bcontact").click(); -->
+			document.getElementById("icontextc").style.color = "#ec1f25";
+		}
+
+	</script>
 </html>

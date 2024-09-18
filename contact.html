@@ -15,34 +15,27 @@
 	<body>
 		<nav>
 			<a href="index.html"><img src="images/logos.png" alt="Small AG Castles logo" id="nlogo"></a>
+			<button onclick="OPENBORDER();BURGER()" id="burger"><img id="burger" src="images/burger.svg" alt="house icon"></a></button>
 			<a href="index.html"><img id="iconsh" src="images/housei-final.png" alt="house icon"  onmouseover="HOMEYELLOW()" onmouseout="HOME()"></a>
 			<a href="index.html" onmouseover="HOMEYELLOW()" onmouseout="HOME()" id="icontexth">HOME </a>
 			<a href="equipment.html"><img id="iconsi" src="images/infoi-final.png" alt="info icon"  onmouseover="EQUIPMENTYELLOW()" onmouseout="EQUIPMENT()"></a>
 			<a href="equipment.html" onmouseover="EQUIPMENTYELLOW()" onmouseout="EQUIPMENT()" id="icontexte">EQUIPMENT </a>
 			<a href="contact.html"><img id="iconsp" src="images/phonei-final-red.png" alt="phone icon"></a>
 			<a href="contact.html" class="icontexton">CONTACT</a>
-			<script>
-			function HOMEYELLOW() {
-				document.getElementById("iconsh").src = "images/housei-final-yellow.png";
-				document.getElementById("icontexth").style.color = "#fbde01";
-			}
-			function HOME() {
-				document.getElementById("iconsh").src = "images/housei-final.png";
-				document.getElementById("icontexth").style.color = "#4a91df";
-			}
-			function EQUIPMENTYELLOW() {
-				document.getElementById("iconsi").src = "images/infoi-final-yellow.png";
-				document.getElementById("icontexte").style.color = "#fbde01";
-			}
-			function EQUIPMENT() {
-				document.getElementById("iconsi").src = "images/infoi-final.png";
-				document.getElementById("icontexte").style.color = "#4a91df";
-			}
-			</script>
 		</nav>
+		<div id="dropdown">
+			<div id="blinks">
+				<button onclick="CLOSE();CLOSEBORDER()" id="close">X</button>
+				<br>
+				<br>
+				<a href="index.html" id="bhome">Home</a>
+				<a href="equipment.html" id="bequipment">Equipment</a>
+				<a href="contact.html" id="bcontact">Contact</a>
+			</div>
+		</div>
 		<div class="thead">
 			<img src="images/logoa.png" alt="AG Castles logo" id="logo">
-			<img src="images/cat.jpg" alt="cat" id="heroi2">
+			<img src="images/logohero.svg" alt="cat" id="heroi2">
 		</div>
 		<div id="contactt">
 			<p class="ctext">If you are interested in our services we are found at <b>14 Hua street, Bell Block, New Plymouth</b> where our team of professionals are always happy to help!</p>
@@ -57,8 +50,45 @@
 			</div>
 			<a href="equipment.html"><img src="images/contacti2.jpg" alt="cat" id="contacti2"></a>
 		</div>
-		<div id="footercontact">
-		
-		</div>
+		<footer>
+			<a href="https://www.facebook.com/ag.castle" id="footerlinks"><img src="images/facebook.png" alt="facebook logo" id="facebook"></a>
+			<div class="ftalign">
+				<p class="footertext"><b>Phone number</b>: 021 125 4317</p>
+				<p class="footertext"><b>Address</b>: 14 Hua street, Bell Block, New Plymouth</p>
+				<p class="footertext"><b>Email</b>: agkidspartyhire@gmail.com</p>
+			</div>
+			<img src="images/logob.jpg" alt="AG Castles logo" id="footerlogo">
+		</footer>
 	</body>
+	<script>
+		function HOMEYELLOW() {
+			document.getElementById("iconsh").src = "images/housei-final-yellow.png";
+			document.getElementById("icontexth").style.color = "#fbde01";
+		}
+		function HOME() {
+			document.getElementById("iconsh").src = "images/housei-final.png";
+			document.getElementById("icontexth").style.color = "#4a91df";
+		}
+		function EQUIPMENTYELLOW() {
+			document.getElementById("iconsi").src = "images/infoi-final-yellow.png";
+			document.getElementById("icontexte").style.color = "#fbde01";
+		}
+		function EQUIPMENT() {
+			document.getElementById("iconsi").src = "images/infoi-final.png";
+			document.getElementById("icontexte").style.color = "#4a91df";
+		}
+		function OPENBORDER() {
+			document.getElementById("dropdown").setAttribute("style","border-bottom: 8px solid #4a91df");
+		}
+		function BURGER() {
+			document.getElementById("dropdown").style.height = "259px";
+		}
+		function CLOSEBORDER() {
+			document.getElementById("dropdown").setAttribute("style","0");
+		}
+		function CLOSE() {
+
+			document.getElementById("dropdown").style.height = "0";
+		}
+	</script>
 </html>

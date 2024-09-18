@@ -15,41 +15,101 @@
 	<body>
 		<nav>
 			<a href="index.html"><img src="images/logos.png" alt="Small AG Castles logo" id="nlogo"></a>
+			<button onclick="OPENBORDER();BURGER()" id="burger"><img id="burger" src="images/burger.svg" alt="house icon"></a></button>
 			<a href="index.html"><img id="iconsh" src="images/housei-final.png" alt="house icon"  onmouseover="HOMEYELLOW()" onmouseout="HOME()"></a>
 			<a href="index.html" onmouseover="HOMEYELLOW()" onmouseout="HOME()" id="icontexth">HOME </a>
 			<a href="equipment.html"><img id="iconsi" src="images/infoi-final-red.png" alt="info icon"></a>
 			<a href="equipment.html" class="icontexton">EQUIPMENT </a>
 			<a href="contact.html"><img id="iconsp" src="images/phonei-final.png" alt="phone icon"  onmouseover="CONTACTYELLOW()" onmouseout="CONTACT()"></a>
 			<a href="contact.html" onmouseover="CONTACTYELLOW()" onmouseout="CONTACT()" id="icontextc">CONTACT</a>
-			<script>
-			function HOMEYELLOW() {
-				document.getElementById("iconsh").src = "images/housei-final-yellow.png";
-				document.getElementById("icontexth").style.color = "#fbde01";
-			}
-			function HOME() {
-				document.getElementById("iconsh").src = "images/housei-final.png";
-				document.getElementById("icontexth").style.color = "#4a91df";
-			}
-			function CONTACTYELLOW() {
-				document.getElementById("iconsp").src = "images/phonei-final-yellow.png";
-				document.getElementById("icontextc").style.color = "#fbde01";
-			}
-			function CONTACT() {
-				document.getElementById("iconsp").src = "images/phonei-final.png";
-				document.getElementById("icontextc").style.color = "#4a91df";
-			}
-			</script>
 		</nav>
+		<div id="dropdown">
+			<div id="blinks">
+				<button onclick="CLOSE();CLOSEBORDER()" id="close">X</button>
+				<br>
+				<br>
+				<a href="index.html" id="bhome">Home</a>
+				<a href="equipment.html" id="bequipment">Equipment</a>
+				<a href="contact.html" id="bcontact">Contact</a>
+			</div>
+		</div>
 		<div class="thead">
 			<img src="images/logoa.png" alt="AG Castles logo" id="logo">
-			<img src="images/cat.jpg" alt="cat" id="heroi2">
+			<img src="images/logohero.svg" alt="cat" id="heroi2">
 		</div>
 		<div class="shead">
-			<p class="sheadt">Offering plenty of options for bouncy castles take your pick and prepare for non-stop laughter, fun and bouncing excitement! We will arrive with the bouncy castles 1 hour before the start of your party and don't worry about returning it as we will come and pick it up after the 4 hours!</p>
+			<p class="sheadt">Offering plenty of options for bouncy castles take your pick and prepare for non-stop laughter, fun and bouncing excitement!</p>
+			<!-- <div id="br"></div> -->
+			<br>
+			<p class="sheadt">We will arrive with the bouncy castles 1 hour before the start of your party and don't worry about returning it as we will come and pick it up after the 4 hours!</p>
 			<br>
 			<p class="sheadt"><b>Delivery:</b></p>
 			<p class="sheadt"><b>New plymouth-</b> For those within New Plymouth we are delighted to offer free delivery at no extra cost.</p>
 			<p class="sheadt"><b>Outside New plymouth-</b> For those who reside outside New Plymouth a delivery fee will be applied, contact us for more information.</p>
+		</div>
+		<div id="slidecon">
+			<div class="slides">
+				<p class="slideop"><b>Option 1</b></p>
+				<img src="images/options/option1.jpg" class="slideimg" style="width:80%; border: #ec1f25 solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Option 2</b></p>
+				<img src="images/options/option2.jpg" class="slideimg" style="width:80%; border: #fbde01 solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Option 3</b></p>
+				<img src="images/options/option3.jpg" class="slideimg" style="width:80%; border: #4a91df solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x3.5m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Option 4</b></p>
+				<img src="images/options/option4.jpg" class="slideimg" style="width:60%; border: #ec1f25 solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $200 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x5m (W) x5m (H)<br><b>Area Required:</b> 8m x 6m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Option 5</b></p>
+				<img src="images/options/option5.jpg" class="slideimg" style="width:60%; border: #fbde01 solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6.7m (L) x5.8m (W) x4.8m (H)<br><b>Area Required:</b> 8m x 6m<br><b>Suitable Age:</b> Up to 14 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Option 6</b></p>
+				<img src="images/options/option6.jpg" class="slideimg" style="width:70%; border: #4a91df solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $240 for 4 Hours (Includes GST)<br><b>Size:</b> 6.8m (L) x3.4m (W) x3.5m (H)<br><b>Area Required:</b> 7.8m x 4.5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Option 7</b></p>
+				<img src="images/options/option7.jpg" class="slideimg" style="width:70%; border: #ec1f25 solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $180 for 4 Hours (Includes GST)<br><b>Size:</b> 4m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 5m x 5m<br><b>Suitable Age:</b> Up to 10 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Option 8</b></p>
+				<img src="images/options/option8.jpg" class="slideimg" style="width:70%; border: #fbde01 solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 4.8m (L) x4m (W) x3.5m (H)<br><b>Area Required:</b> 6m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Balloon Pump</b></p>
+				<img src="images/options/pump.jpg" class="slideimg" style="width:60%; border: #4a91df solid 5px;">
+				<p class="slideinfo" style="margin-right:9vw; margin-left:9vw;"><b>Price:</b>$10 Includes GST for 24 Hours<br><br>If you are planning to create a magical balloon fairland or want any balloon decorations for your child’s birthday, this electric balloon Pump is convenient & efficient to use.</p>
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Kids Tables/Chairs</b></p>
+				<img src="images/options/tablechairs.jpg" class="slideimg" style="width:80%; border: #ec1f25 solid 5px;">
+				<p class="slideinfo" style="margin-right:9vw; margin-left:9vw;"><b>Price:</b>Kid’s Chairs - $2 per chair Includes GST (4 Hours); Kid’s Tables - $5 per Table Includes GST<br><br>Red (14), Blue (17), Pink (18), Yellow (5), Tables (White-14) - Table height can be adjust to suit older kid’s or adults</p>
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>Soft Play</b></p>
+				<img src="images/options/softplay1.jpg" class="slideimg" style="width:80%; border: #fbde01 solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $190 for 4 Hours (Includes GST)<br><b>Area Required:</b> 3m x 3m<br><b>Suitable Age:</b> Up to 4 years old</p>
+			</div>
+			<div class="slides">
+				<p class="slideop"><b>SP + Inflatable</b></p>
+				<img src="images/options/softplay1.jpg" class="slideimg" style="width:80%; border: #4a91df solid 5px;">
+				<p class="slideinfo"><b>Price:</b> $310 for 4 Hours (Includes GST)<br><b>Area Required:</b> 3m x 3m for soft play, size for inflatable dependant<br><b>Suitable Age:</b> Up to 4 years old for soft play, age for inflatable dependant</p>
+			</div>
+				<a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a id="next" onclick="plusSlides(1)">&#10095;</a>
 		</div>
 		<div class="htitles">
 			<p class="htitle">Inflatable Hire</p>
@@ -133,11 +193,71 @@
 		<footer>
 			<a href="https://www.facebook.com/ag.castle" id="footerlinks"><img src="images/facebook.png" alt="facebook logo" id="facebook"></a>
 			<div class="ftalign">
-				<p class="footertext">Phone number: 021 125 4317</p>
-				<p class="footertext">Address: 14 Hua street, Bell Block, New Plymouth</p>
-				<p class="footertext">Email: agkidspartyhire@gmail.com</p>
+				<p class="footertext"><b>Phone number</b>: 021 125 4317</p>
+				<p class="footertext"><b>Address</b>: 14 Hua street, Bell Block, New Plymouth</p>
+				<p class="footertext"><b>Email</b>: agkidspartyhire@gmail.com</p>
 			</div>
 			<img src="images/logob.jpg" alt="AG Castles logo" id="footerlogo">
 		</footer>
 	</body>
+	<script>
+		let slideIndex = 1;
+		show(slideIndex);
+		
+		function plusSlides(n) {
+			show(slideIndex += n);
+		}
+		function currentSlide(n) {
+			show(slideIndex = n);
+		}
+		function show(n) {
+			let i;
+			let slides = document.getElementsByClassName("slides");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slides[slideIndex-1].style.display = "block";
+		}
+		function HOMEYELLOW() {
+			document.getElementById("iconsh").src = "images/housei-final-yellow.png";
+			document.getElementById("icontexth").style.color = "#fbde01";
+		}
+		function HOME() {
+			document.getElementById("iconsh").src = "images/housei-final.png";
+			document.getElementById("icontexth").style.color = "#4a91df";
+		}
+		function CONTACTYELLOW() {
+			document.getElementById("iconsp").src = "images/phonei-final-yellow.png";
+			document.getElementById("icontextc").style.color = "#fbde01";
+		}
+		function CONTACT() {
+			document.getElementById("iconsp").src = "images/phonei-final.png";
+			document.getElementById("icontextc").style.color = "#4a91df";
+		}
+		function OPENBORDER() {
+			document.getElementById("dropdown").setAttribute("style","border-bottom: 8px solid #4a91df");
+		}
+		function BURGER() {
+			document.getElementById("dropdown").style.height = "259px";
+		}
+		function CLOSEBORDER() {
+			document.getElementById("dropdown").setAttribute("style","0");
+		}
+		function CLOSE() {
+
+			document.getElementById("dropdown").style.height = "0";
+		}
+		document.addEventListener('DOMContentLoaded', function() {
+			var link = document.getElementById('AG3');
+
+			if (link) {
+				link.addEventListener('click', function(event) {
+					document.getElementById("icontextc").style.color = "#ec1f25";
+					console.log('Special link clicked.');
+				});
+			}
+		});
+	</script>
 </html>

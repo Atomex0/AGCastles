@@ -11,11 +11,12 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<nav>
 			<a href="index.html"><img src="images/logos.png" alt="Small AG Castles logo" id="nlogo"></a>
-			<button onclick="OPENBORDER();BURGER()" id="burger"><img id="burger" src="images/burger.svg" alt="house icon"></a></button>
+			<button onclick="DROPBORDER();BURGER()" id="burger"><img id="burgerimg" src="images/burger.svg" alt="house icon"></button>
 			<a href="index.html"><img id="iconsh" src="images/housei-final.png" alt="house icon"  onmouseover="HOMEYELLOW()" onmouseout="HOME()"></a>
 			<a href="index.html" onmouseover="HOMEYELLOW()" onmouseout="HOME()" id="icontexth">HOME </a>
 			<a href="equipment.html"><img id="iconsi" src="images/infoi-final-red.png" alt="info icon"></a>
@@ -35,7 +36,7 @@
 		</div>
 		<div class="thead">
 			<img src="images/logoa.png" alt="AG Castles logo" id="logo">
-			<img src="images/logohero.svg" alt="cat" id="heroi2">
+			<img src="images/logohero.svg" alt="AG Castles logo" id="heroi2">
 		</div>
 		<div class="shead">
 			<p class="sheadt">Offering plenty of options for bouncy castles take your pick and prepare for non-stop laughter, fun and bouncing excitement!</p>
@@ -47,65 +48,66 @@
 			<p class="sheadt"><b>New plymouth-</b> For those within New Plymouth we are delighted to offer free delivery at no extra cost.</p>
 			<p class="sheadt"><b>Outside New plymouth-</b> For those who reside outside New Plymouth a delivery fee will be applied, contact us for more information.</p>
 		</div>
+		<!-- Slides for mobile version of page -->
 		<div id="slidecon">
 			<div class="slides">
 				<p class="slideop"><b>Option 1</b></p>
-				<img src="images/options/option1.jpg" class="slideimg" style="width:80%; border: #ec1f25 solid 5px;">
+				<img src="images/options/option1.jpg" class="slideimg" style="width:80%; border: #ec1f25 solid 5px;" alt="Bouncy castle Option 1">
 				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Option 2</b></p>
-				<img src="images/options/option2.jpg" class="slideimg" style="width:80%; border: #fbde01 solid 5px;">
+				<img src="images/options/option2.jpg" class="slideimg" style="width:80%; border: #fbde01 solid 5px;" alt="Bouncy castle Option 2">
 				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Option 3</b></p>
-				<img src="images/options/option3.jpg" class="slideimg" style="width:80%; border: #4a91df solid 5px;">
+				<img src="images/options/option3.jpg" class="slideimg" style="width:80%; border: #4a91df solid 5px;" alt="Bouncy castle Option 3">
 				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x3.5m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Option 4</b></p>
-				<img src="images/options/option4.jpg" class="slideimg" style="width:60%; border: #ec1f25 solid 5px;">
+				<img src="images/options/option4.jpg" class="slideimg" style="width:60%; border: #ec1f25 solid 5px;" alt="Bouncy castle Option 4">
 				<p class="slideinfo"><b>Price:</b> $200 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x5m (W) x5m (H)<br><b>Area Required:</b> 8m x 6m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Option 5</b></p>
-				<img src="images/options/option5.jpg" class="slideimg" style="width:60%; border: #fbde01 solid 5px;">
+				<img src="images/options/option5.jpg" class="slideimg" style="width:60%; border: #fbde01 solid 5px;" alt="Bouncy castle Option 5">
 				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6.7m (L) x5.8m (W) x4.8m (H)<br><b>Area Required:</b> 8m x 6m<br><b>Suitable Age:</b> Up to 14 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Option 6</b></p>
-				<img src="images/options/option6.jpg" class="slideimg" style="width:70%; border: #4a91df solid 5px;">
+				<img src="images/options/option6.jpg" class="slideimg" style="width:70%; border: #4a91df solid 5px;" alt="Bouncy castle Option 6">
 				<p class="slideinfo"><b>Price:</b> $240 for 4 Hours (Includes GST)<br><b>Size:</b> 6.8m (L) x3.4m (W) x3.5m (H)<br><b>Area Required:</b> 7.8m x 4.5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Option 7</b></p>
-				<img src="images/options/option7.jpg" class="slideimg" style="width:70%; border: #ec1f25 solid 5px;">
+				<img src="images/options/option7.jpg" class="slideimg" style="width:70%; border: #ec1f25 solid 5px;" alt="Bouncy castle Option 7">
 				<p class="slideinfo"><b>Price:</b> $180 for 4 Hours (Includes GST)<br><b>Size:</b> 4m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 5m x 5m<br><b>Suitable Age:</b> Up to 10 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Option 8</b></p>
-				<img src="images/options/option8.jpg" class="slideimg" style="width:70%; border: #fbde01 solid 5px;">
+				<img src="images/options/option8.jpg" class="slideimg" style="width:70%; border: #fbde01 solid 5px;" alt="Bouncy castle Option 8">
 				<p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 4.8m (L) x4m (W) x3.5m (H)<br><b>Area Required:</b> 6m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Balloon Pump</b></p>
-				<img src="images/options/pump.jpg" class="slideimg" style="width:60%; border: #4a91df solid 5px;">
+				<img src="images/options/pump.jpg" class="slideimg" style="width:60%; border: #4a91df solid 5px;" alt="Balloon pump">
 				<p class="slideinfo" style="margin-right:9vw; margin-left:9vw;"><b>Price:</b>$10 Includes GST for 24 Hours<br><br>If you are planning to create a magical balloon fairland or want any balloon decorations for your child’s birthday, this electric balloon Pump is convenient & efficient to use.</p>
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Kids Tables/Chairs</b></p>
-				<img src="images/options/tablechairs.jpg" class="slideimg" style="width:80%; border: #ec1f25 solid 5px;">
+				<img src="images/options/tablechairs.jpg" class="slideimg" style="width:80%; border: #ec1f25 solid 5px;" alt="Kids Tables and Chairs">
 				<p class="slideinfo" style="margin-right:9vw; margin-left:9vw;"><b>Price:</b>Kid’s Chairs - $2 per chair Includes GST (4 Hours); Kid’s Tables - $5 per Table Includes GST<br><br>Red (14), Blue (17), Pink (18), Yellow (5), Tables (White-14) - Table height can be adjust to suit older kid’s or adults</p>
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>Soft Play</b></p>
-				<img src="images/options/softplay1.jpg" class="slideimg" style="width:80%; border: #fbde01 solid 5px;">
+				<img src="images/options/softplay1.jpg" class="slideimg" style="width:80%; border: #fbde01 solid 5px;" alt="Soft playground">
 				<p class="slideinfo"><b>Price:</b> $190 for 4 Hours (Includes GST)<br><b>Area Required:</b> 3m x 3m<br><b>Suitable Age:</b> Up to 4 years old</p>
 			</div>
 			<div class="slides">
 				<p class="slideop"><b>SP + Inflatable</b></p>
-				<img src="images/options/softplay1.jpg" class="slideimg" style="width:80%; border: #4a91df solid 5px;">
+				<img src="images/options/softplay1.jpg" class="slideimg" style="width:80%; border: #4a91df solid 5px;" alt="Soft playground plus Inflatable">
 				<p class="slideinfo"><b>Price:</b> $310 for 4 Hours (Includes GST)<br><b>Area Required:</b> 3m x 3m for soft play, size for inflatable dependant<br><b>Suitable Age:</b> Up to 4 years old for soft play, age for inflatable dependant</p>
 			</div>
 				<a id="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -114,79 +116,82 @@
 		<div class="htitles">
 			<p class="htitle">Inflatable Hire</p>
 		</div>
+		<!-- Grid for Bouncy castle examples -->
 		<div class="grid">
 			<div class="opr">
 				<p class="optext"><b>Option 1</b></p>
-				<img src="images/options/option1.jpg" alt="cat" class="oppic">
+				<img src="images/options/option1.jpg" alt="Castle option 1" class="oppic">
 				<p class="opinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="opy">
 				<p class="optext"><b>Option 2</b></p>
-				<img src="images/options/option2.jpg" alt="cat" class="oppic">
+				<img src="images/options/option2.jpg" alt="Castle option 2" class="oppic">
 				<p class="opinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="opb">
 				<p class="optext"><b>Option 3</b></p>
-				<img src="images/options/option3.jpg" alt="cat" class="oppic">
+				<img src="images/options/option3.jpg" alt="Castle option 3" class="oppic">
 				<p class="opinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x3.5m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 		</div>
 		<div class="grid">
 			<div class="opr">
 				<p class="optext"><b>Option 4</b></p>
-				<img src="images/options/option4.jpg" alt="cat" class="oppic">
+				<img src="images/options/option4.jpg" alt="Castle option 4" class="oppic">
 				<p class="opinfo"><b>Price:</b> $200 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x5m (W) x5m (H)<br><b>Area Required:</b> 8m x 6m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="opy">
 				<p class="optext"><b>Option 5</b></p>
-				<img src="images/options/option5.jpg" alt="cat" class="oppic">
+				<img src="images/options/option5.jpg" alt="Castle option 5" class="oppic">
 				<p class="opinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6.7m (L) x5.8m (W) x4.8m (H)<br><b>Area Required:</b> 8m x 6m<br><b>Suitable Age:</b> Up to 14 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="opb">
 				<p class="optext"><b>Option 6</b></p>
-				<img src="images/options/option6.jpg" alt="cat" class="oppic">
+				<img src="images/options/option6.jpg" alt="Castle option 6" class="oppic">
 				<p class="opinfo"><b>Price:</b> $240 for 4 Hours (Includes GST)<br><b>Size:</b> 6.8m (L) x3.4m (W) x3.5m (H)<br><b>Area Required:</b> 7.8m x 4.5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 		</div>
 		<div class="grid">
 			<div class="opr">
 				<p class="optext"><b>Option 7</b></p>
-				<img src="images/options/option7.jpg" alt="cat" class="oppic">
+				<img src="images/options/option7.jpg" alt="Castle option 7" class="oppic">
 				<p class="opinfo"><b>Price:</b> $180 for 4 Hours (Includes GST)<br><b>Size:</b> 4m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 5m x 5m<br><b>Suitable Age:</b> Up to 10 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 			<div class="opb">
 				<p class="optext"><b>Option 8</b></p>
-				<img src="images/options/option8.jpg" alt="cat" class="oppic">
+				<img src="images/options/option8.jpg" alt="Castle option 8" class="oppic">
 				<p class="opinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 4.8m (L) x4m (W) x3.5m (H)<br><b>Area Required:</b> 6m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability
 			</div>
 		</div>
 		<div class="htitles">
 			<p class="htitle">Other Play Hire</p>
 		</div>
+		<!-- Extra equipment examples -->
 		<div class="grid">
 			<div class="opr">
 				<p class="optext"><b>Balloon Pump</b></p>
-				<img src="images/options/pump.jpg" alt="cat" class="oppic">
+				<img src="images/options/pump.jpg" alt="Balloon pump" class="oppic">
 				<p class="opinfo"><b>Price:</b>$10 Includes GST for 24 Hours<br><br>If you are planning to create a magical balloon fairland or want any balloon decorations for your child’s birthday, this electric balloon Pump is convenient & efficient to use.</p>
 			</div>
 			<div class="opb">
 				<p class="optext"><b>Kids Tables/Chairs</b></p>
-				<img src="images/options/tablechairs.jpg" alt="cat" class="oppic" style="width: 90%;">
+				<img src="images/options/tablechairs.jpg" alt="Kids Tables and Chairs" class="oppic" style="width: 90%;">
 				<p class="opinfo"><b>Price:</b>Kid’s Chairs - $2 per chair Includes GST (4 Hours); Kid’s Tables - $5 per Table Includes GST<br><br>Red (14), Blue (17), Pink (18), Yellow (5), Tables (White-14) - Table height can be adjust to suit older kid’s or adults</p>
 			</div>
 		</div>
 		<div class="htitles">
 			<p class="htitle">Soft Play Hire</p>
 		</div>
+		<!-- Soft play options -->
 		<div class="grid">
 			<div class="opr">
 				<p class="optext"><b>Soft Play</b></p>
-				<img src="images/options/softplay1.jpg" alt="cat" class="oppic">
+				<img src="images/options/softplay1.jpg" alt="Soft play" class="oppic">
 				<p class="opinfo"><b>Price:</b> $190 for 4 Hours (Includes GST)<br><b>Area Required:</b> 3m x 3m<br><b>Suitable Age:</b> Up to 4 years old</p>
 			</div>
 			<div class="opb">
 				<p class="optext"><b>SP + Inflatable</b></p>
-				<img src="images/options/softplay1.jpg" alt="cat" class="oppic">
+				<img src="images/options/softplay1.jpg" alt="Soft play and inflatable" class="oppic">
 				<p class="opinfo"><b>Price:</b> $310 for 4 Hours (Includes GST)<br><b>Area Required:</b> 3m x 3m for soft play, size for inflatable dependant<br><b>Suitable Age:</b> Up to 4 years old for soft play, age for inflatable dependant</p>
 			</div>
 		</div>
@@ -199,7 +204,7 @@
 			</div>
 			<img src="images/logob.jpg" alt="AG Castles logo" id="footerlogo">
 		</footer>
-	</body>
+	<!-- The javascript used to make the slides work -->
 	<script>
 		let slideIndex = 1;
 		show(slideIndex);
@@ -220,44 +225,6 @@
 			}
 			slides[slideIndex-1].style.display = "block";
 		}
-		function HOMEYELLOW() {
-			document.getElementById("iconsh").src = "images/housei-final-yellow.png";
-			document.getElementById("icontexth").style.color = "#fbde01";
-		}
-		function HOME() {
-			document.getElementById("iconsh").src = "images/housei-final.png";
-			document.getElementById("icontexth").style.color = "#4a91df";
-		}
-		function CONTACTYELLOW() {
-			document.getElementById("iconsp").src = "images/phonei-final-yellow.png";
-			document.getElementById("icontextc").style.color = "#fbde01";
-		}
-		function CONTACT() {
-			document.getElementById("iconsp").src = "images/phonei-final.png";
-			document.getElementById("icontextc").style.color = "#4a91df";
-		}
-		function OPENBORDER() {
-			document.getElementById("dropdown").setAttribute("style","border-bottom: 8px solid #4a91df");
-		}
-		function BURGER() {
-			document.getElementById("dropdown").style.height = "259px";
-		}
-		function CLOSEBORDER() {
-			document.getElementById("dropdown").setAttribute("style","0");
-		}
-		function CLOSE() {
-
-			document.getElementById("dropdown").style.height = "0";
-		}
-		document.addEventListener('DOMContentLoaded', function() {
-			var link = document.getElementById('AG3');
-
-			if (link) {
-				link.addEventListener('click', function(event) {
-					document.getElementById("icontextc").style.color = "#ec1f25";
-					console.log('Special link clicked.');
-				});
-			}
-		});
 	</script>
+	</body>
 </html>

@@ -11,11 +11,12 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<nav>
 			<a href="index.html"><img src="images/logos.png" alt="Small AG Castles logo" id="nlogo"></a>
-			<button onclick="DROPBORDER();BURGER()" id="burger"><img id="burger" src="images/burger.svg" alt="house icon"></a></button>
+			<button onclick="DROPBORDER();BURGER()" id="burger"><img id="burgerimg" src="images/burger.svg" alt="house icon"></button>
 			<a href="index.html"><img id="iconsh" src="images/housei-final-red.png" alt="house icon"></a>
 			<a href="index.html" class="icontexton">HOME </a>
 			<a href="equipment.html"><img id="iconsi" src="images/infoi-final.png" alt="info icon"  onmouseover="EQUIPMENTYELLOW()" onmouseout="EQUIPMENT()"></a>
@@ -33,10 +34,11 @@
 				<a href="contact.html" id="bcontact">Contact</a>
 			</div>
 		</div>
+		<!-- Main image of home page -->
 		<div id="hero">
 			<img src="images/herorefined.svg" alt="AG Castles logo on top of examples of party equipment" id="heroi">
-			<!-- <img width="500" height="500" src="images/arrow.gif" id="arrow" alt="pizza"> --><img src="images/arrow.svg" alt="AG Castles logo on top of examples of party equipment" id="arrow">
-			<img src="images/mobilehero.svg" alt="cat" id="mobilehero">
+			<a href="#motto" id="heroiarrow"><img src="images/arrow.svg" alt="Down arrow" id="arrow"></a>
+			<img src="images/mobilehero.svg" alt="Mobile version of hero image" id="mobilehero">
 		</div>
 		<div id="motto">
 			<img id="mottoc" src="images/motto.png" alt="Make some lasting memories with AG Castles">
@@ -44,16 +46,16 @@
 		<div class="paratext">
 			<p class="text">We at AG Castles as a family business understand the importance of creating memories for your little ones. With equipment perfect for occasions like birthdays, fairs or even just gatherings we work hard to cater towards what will make your event special!</p>
 		</div>
+		<!-- Grid for image examples -->
 		<div id="igrid">
-			<button onclick="AJAX()"><img src="images/gridis/AGE2.jpg" alt="cat" class="igsr"></button><!-- fix alt -->
-			<a href="equipment.html" id="AG3"><img src="images/gridis/AGE3.jpg" alt="cat" class="igsy"></a>
-			<a href="equipment.html"><img src="images/gridis/AGE4.jpg" alt="cat" class="igsb"></a>
+			<a href="equipment.html"><div class="gridcontainer"><img src="images/gridis/AGE2.jpg" alt="Castle example 1" class="igsr" onmouseover="GRIDOPEN1()" onmouseout="GRIDCLOSE1()"><div id="griddrop1"><p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability</div></div></a>
+			<a href="equipment.html"><div class="gridcontainer"><img src="images/gridis/AGE3.jpg" alt="Castle example 2" class="igsy" onmouseover="GRIDOPEN2()" onmouseout="GRIDCLOSE2()"><div id="griddrop2"><p class="slideinfo"><b>Price:</b> $240 for 4 Hours (Includes GST)<br><b>Size:</b> 6.8m (L) x3.4m (W) x3.5m (H)<br><b>Area Required:</b> 7.8m x 4.5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability</div></div></a>
+			<a href="equipment.html"><div class="gridcontainer"><img src="images/gridis/AGE4.jpg" alt="Castle example 3" class="igsb" onmouseover="GRIDOPEN3()" onmouseout="GRIDCLOSE3()"><div id="griddrop3"><p class="slideinfo"><b>Price:</b> $200 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x5m (W) x5m (H)<br><b>Area Required:</b> 8m x 6m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability</div></div></a>
 			<div id="br"></div>
-			<a href="equipment.html"><img src="images/gridis/AGE5.jpg" alt="cat" class="igsr2"></a>
-			<a href="equipment.html"><img src="images/gridis/AGE6.jpg" alt="cat" class="igsy2"></a>
-			<a href="equipment.html"><img src="images/gridis/AGE7.jpg" alt="cat" class="igsb2"></a>
+			<a href="equipment.html"><div class="gridcontainer"><img src="images/gridis/AGE5.jpg" alt="Castle example 4" class="igsr2" onmouseover="GRIDOPEN4()" onmouseout="GRIDCLOSE4()"><div id="griddrop4"><p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 6m (L) x4m (W) x3.5m (H)<br><b>Area Required:</b> 7m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability</div></div></a>
+			<a href="equipment.html"><div class="gridcontainer"><img src="images/gridis/AGE6.jpg" alt="Castle example 5" class="igsy2" onmouseover="GRIDOPEN5()" onmouseout="GRIDCLOSE5()"><div id="griddrop5"><p class="slideinfo"><b>Price:</b> $180 for 4 Hours (Includes GST)<br><b>Size:</b> 4m (L) x4m (W) x4m (H)<br><b>Area Required:</b> 5m x 5m<br><b>Suitable Age:</b> Up to 10 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability</div></div></a>
+			<a href="equipment.html"><div class="gridcontainer"><img src="images/gridis/AGE7.jpg" alt="Castle example 6" class="igsb2" onmouseover="GRIDOPEN6()" onmouseout="GRIDCLOSE6()"><div id="griddrop6"><p class="slideinfo"><b>Price:</b> $220 for 4 Hours (Includes GST)<br><b>Size:</b> 4.8m (L) x4m (W) x3.5m (H)<br><b>Area Required:</b> 6m x 5m<br><b>Suitable Age:</b> Up to 12 years old<br><b>Maximum User:</b> 7-8 Kids per ride<br><b>Delivery Option:</b> Subject to staff availability</div></div></a>
 		</div>
-		<a href="equipment.html" class="gridlink"><p class="gridlink">Check out our full collection of equipment here!</p></a>
 		<div class="paratext">
 			<p class="text" style="padding-top:100px;">What sets us apart is our dedication to safety, bumps and scratches can quickly ruin the mood. So we have the utmost commitment to the well-being of your children so we ensure that our inflatables are meticulousy maintained, regularly inspected and checked to make sure they meet the highest safety standards in the industry!</p>
 		</div>
@@ -70,44 +72,4 @@
 			<img src="images/logob.jpg" alt="AG Castles logo" id="footerlogo">
 		</footer>
 	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script>
-		function EQUIPMENTYELLOW() {
-			document.getElementById("iconsi").src = "images/infoi-final-yellow.png";
-			document.getElementById("icontexte").style.color = "#fbde01";
-		}
-		function EQUIPMENT() {
-			document.getElementById("iconsi").src = "images/infoi-final.png";
-			document.getElementById("icontexte").style.color = "#4a91df";
-		}
-		function CONTACTYELLOW() {
-			document.getElementById("iconsp").src = "images/phonei-final-yellow.png";
-			document.getElementById("icontextc").style.color = "#fbde01";
-		}
-		function CONTACT() {
-			document.getElementById("iconsp").src = "images/phonei-final.png";
-			document.getElementById("icontextc").style.color = "#4a91df";
-		}
-		function DROPBORDER() {
-			document.getElementById("dropdown").setAttribute("style","border-bottom: 8px solid #4a91df");
-		}
-		function BURGER() {
-			document.getElementById("dropdown").style.height = "259px";
-		}
-		function CLOSEBORDER() {
-			document.getElementById("dropdown").setAttribute("style","0");
-		}
-		function CLOSE() {
-			document.getElementById("dropdown").style.height = "0";
-		}
-		function PAGE(){
-			<!-- document.getElementById("bequipment").click(); -->
-			document.getElementById("icontextc").style.color = "#fbde01";
-		}
-		function ANCHOR(){
-			<!-- document.getElementById("bcontact").click(); -->
-			document.getElementById("icontextc").style.color = "#ec1f25";
-		}
-
-	</script>
 </html>
